@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App ☀️</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="body-background">
+      <h1>Weather App</h1>
+      <div class="row mt-5">
+        <div class="col-9">
+          <form class="d-flex" id="city-search-form">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Write a city"
+            />
+            <input type="submit" class="btn btn-success ms-2" value="search" />
+          </form>
+        </div>
+        <div class="col-3 text-center">
+          <button id="myLocation" class="btn btn-primary">My location</button>
+        </div>
+      </div>
+
+      <div class="row mt-5 mb-5">
+        <div class="col date-time text-center">
+          <div class="top">
+            <img
+              class="bigCloud"
+              src="http://openweathermap.org/img/w/"
+              alt=""
+            />
+            <div id="weatherCondition"></div>
+          </div>
+          <div>
+            <div id="current-date">Wed, 23 november</div>
+            <div id="current-time">14:20</div>
+          </div>
+        </div>
+        <div class="col-6 temperature-place text-center">
+          <div>
+            <span id="currTemp">6</span>
+            <span class="unitSwitcher">
+              <span id="setCelsius" class="tempSwitch">°C</span> |
+              <span id="setFahrenheit" class="tempSwitch">°F</span>
+            </span>
+          </div>
+          <div>
+            <span class="emojiLocation">📍</span
+            ><span id="change-city">Malmö</span>
+          </div>
+        </div>
+
+        <div class="col precipitation text-center">
+          <div class="top"></div>
+          <div>
+            <div>Humidity: <span id="percentageHumidity">1</span>%</div>
+            <div>Wind: <span id="windSpeed"> 6 </span> km/h</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          Thu <br />
+          ⛅ <br />
+          5°C <br />
+          35% <br />
+        </div>
+        <div class="col text-center">
+          Fri <br />
+          ⛅ <br />
+          6°C <br />
+          39% <br />
+        </div>
+        <div class="col text-center">
+          Sat <br />
+          ☁️ <br />
+          7°C <br />
+          89% <br />
+        </div>
+        <div class="col text-center">
+          Fri <br />
+          ⛅ <br />
+          5°C <br />
+          15% <br />
+        </div>
+        <div class="col text-center">
+          Mon <br />
+          ⛅ <br />
+          6°C <br />
+          70% <br />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

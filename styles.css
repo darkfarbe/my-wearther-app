@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+}
+
+.body-background {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid rgb(15, 163, 153) 3px;
+  padding: 50px;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+.temperature-place {
+  font-size: 50px;
+}
+
+.date-time {
+  font-size: 20px;
+}
+
+.precipitation {
+  font-size: 20px;
+}
+
+.bigCloud {
+  width: 70px;
+}
+
+.top {
+  height: 7rem;
+}
+.unitSwitcher {
+  font-size: 25px;
+}
+.tempSwitch {
+  color: blue;
+  cursor: pointer;
+}
+
+.emojiLocation {
+  font-size: 20px;
+}
